@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <script language="javascript">languageCode = 'en';</script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;500;700&family=Roboto&display=swap" rel="stylesheet">
+
+    <link href="./assets/reset.css" rel="stylesheet">
+    <link href="./assets/daterangepicker.css" rel="stylesheet"/>
+    <link href="./assets/room.css" rel="stylesheet">
+</head>
+
+<body id="body">
+    <form name="Form1" method="get" action="https://www.bestwestern.se/hotel/88232?type=HOTEL" id="Form1" target="_blank">
+        <div class="mainSiteContainer">
+            <div class="contentSection" style="height: 100vh;">
+                <div class="mb_contentitem_container mb_contentitem_container_bwbooking">
+                    <div class="cs-bw-booking-bookingformContainer bwBookingContainerSingle">
+                        <div id="cs_bw_booking_form_findhotel" class="cs-bw-booking-findHotel">
+                            <div class="container">
+                                <div class="cs-bw-booking-findhoteloptions" id="find_hotel_options">
+
+                                    <div id="booking-calendar" class="cs-bw-booking-calendar">
+                                        <div class="cs-bw-booking-calendar__header">
+                                            <img class="bw-icon" src="./assets/calendar.svg" style="border-width:0">
+                                            <input type="text" id="booking-datepicker" class="bw-input" spellcheck="false" readonly>
+                                            <input type="hidden" id="startDate" name="startDate">
+                                            <input type="hidden" id="endDate" name="endDate">
+                                        </div>
+                                    </div>
+
+                                    <div id="booking-rooms" class="cs-bw-booking-rooms">
+                                        <div class="cs-bw-booking-rooms__header">
+                                            <img class="bw-icon" src=./assets/group.svg>
+                                            <input id="booking-rooms-calculations" class="bw-input" spellcheck="false" readonly>
+                                            <input type="hidden" id="numberOfRooms" name="numberOfRooms">
+                                        </div>
+                                        <div id="booking-rooms-panel" class="cs-bw-booking-rooms-panel">
+                                            <div id="rooms-panel-chambers" class="cs-bw-booking-rooms-panel__chambers">
+                                                <div id="chambers-container"></div>
+                                                <div class="cs-bw-booking-rooms-panel__add-chambre">
+                                                    <button type="button" id="booking-add-chambre">
+                                                        <img src="./assets/plus.svg" style="border-width:0">
+                                                        <span>Add rooms</span>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="cs-bw-booking-rooms-panel__footer">
+                                                <span id="booking-calculations"></span>
+                                                <button type="button" id="booking-close-rooms">
+                                                    <span>Cancel</span>
+                                                </button>
+                                            </div>  
+                                        </div>
+                                    </div>
+                                    
+                                    <div id="booking-codes" class="cs-bw-booking-codes">
+                                        <input type="text" id="promoCode"  class="bw-input" spellcheck="false" placeholder="Booking Code">
+                                    </div>
+
+                                    <input type="submit" class="bookingButton" value="Reserve">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </form>
+    
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/momentjs/latest/moment-with-locales.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+    <script src="./assets/calender.js"></script>
+    <script src="./assets/room.js"></script>
+</body>
+
+</html>
